@@ -1,0 +1,115 @@
+<div class="ImagenBG">
+    <div class="container">
+        <div class="Formulario">
+            <form action="#" class="border p-4 form text-center">
+                <div class="form-group">
+                    <h1>Registro</h1>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 border-right">
+
+                        <div class="form-group">
+                            <label for="Nombre">Nombre</label>
+                            <input [(ngModel)]="persona.nombre" type="text" name="nombre" id="nombre" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Nombre">Apellido</label>
+                            <input [(ngModel)]="persona.apellido" type="text" name="nombre" id="nombre" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Telefono">Teléfono</label>
+                            <input [(ngModel)]="persona.telefono" type="tel" name="telefono" id="telefono" class="form-control">
+                        </div>
+                        
+
+                        <div class="form-group">
+                            <label for="Telefono">Direccion</label>
+                            <input [(ngModel)]="persona.direccion" type="tel" name="telefono" id="telefono" class="form-control">
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                        
+                        <!--Agregar la funcion de confirmar contraseña-->
+                        <div class="form-group">
+                            <label for="password">Genero</label>
+                            <select [(ngModel)]="persona.genero" class="form-group form-control">
+                                <option selected>Elegir</option>
+                                <option >Hombre</option>
+                                <option >Mujer</option>
+                            </select>
+                            
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="password">Correo</label>
+                            <input [(ngModel)]="persona.correo" type="text" name="password" id="password" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Contraseña</label>
+                            <input [(ngModel)]="persona.password" type="password" name="password" id="password" class="form-control">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="border-top mt-1">
+                    <p></p>
+                </div>
+                <div class="form-group">
+                    <p>
+                        <input type="checkbox" disable data-toggle="toggle">
+                        <a href="#" style="color: rgb(10, 57, 212);"> <i> Aceptar Terminos y condiciones de Uso </i></a>
+                    </p>
+                </div>
+                <button type="button" (click)="guardar()" class="btn btn-primary">Guardar</button> <br>
+                <div class="form-group mt-2">
+                    <i> ¿Ya tienes una cuenta? </i> <br>
+                    <strong>Haz click para ingresar</strong> <br>
+                    <button type="submit" class="btn btn-primary mt-2">Registrarse</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid bg-light border-top">
+    <div class="row">
+        <div class="col-md-3 text-center mt-5 border-right">
+            <p> <b> Acerca de nosotros </b> </p>
+            <p> mk247.hn </p>
+            <p> Contactenos </p>
+            <p> Resaltadores </p>
+            <p> Trabaje con nosotros </p>
+        </div>
+
+        <div class="col-md-3 text-center mt-5 border-right">
+            <p> <b> SoporteTécnico </b> </p>
+            <p> Facebook </p>
+            <p> WhatsApp </p>
+            <p> Foro de Usuarios </p>
+            <p> Registro </p>
+            <p> Ayuda </p>
+        </div>
+
+        <div class="col-md-3 text-center mt-5 border-right">
+            <p> <b> Anuncios Clasificados </b> </p>
+            <p> Publique un Anuncio </p>
+            <p> Clasificados </p>
+            <p> Bienes Raices </p>
+            <p> Alquileres </p>
+            <p> Articulos varios </p>
+        </div>
+
+        <div class="col-md-3 text-center mt-5 border-right">
+            <p> <b> Terminos Legales </b> </p>
+            <p> Politica de Privacidad </p>
+            <p> Terminos y condiciones </p>
+            <p> Consejos de Seguridad </p>
+
+        </div>
+
+    </div>
+</div> 
